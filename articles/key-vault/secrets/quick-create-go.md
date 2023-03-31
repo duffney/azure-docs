@@ -133,10 +133,10 @@ func main() {
 
 ## Run the code
 
-1. Before you run the code, create an environment variable named `KEY_VAULT_NAME`. Set the environment variable value to the name of the key vault that you created previously.
+1. Before you run the code, create an environment variable named `AZURE_KEY_VAULT_URI`. Set the environment variable value to the name of the key vault that you created previously.
 
 	```azurecli
-	export KEY_VAULT_NAME=quickstart-kv
+	export AZURE_KEY_VAULT_URI="https://<YourVaultName>.vault.azure.net"
 	```
 
 1. To start the Go app, run the following command:
