@@ -86,7 +86,10 @@ func main() {
 	}
 
 	// create azkeys client
-	client := azkeys.NewClient(keyVaultUrl, cred, nil)
+	client, err := azkeys.NewClient(keyVaultUrl, cred, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	// create RSA Key
 	rsaKeyParams := azkeys.CreateKeyParameters{
